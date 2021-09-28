@@ -28,7 +28,11 @@ public class App {
         for (int n = 0; n < 128; n++) {
             System.out.println("P(" + n + ")=" + new Ejercicio3().P(n));
         }
+    }
 
+    public void test4() {
+        System.out.println("2 -> (BIN) = " + Ejercicio4.dec2Bin(2));
+        System.out.println("1010 -> (BIN) = " + Ejercicio4.bin2Dec("1010"));
     }
 
     public static void main(String[] args) {
@@ -38,6 +42,8 @@ public class App {
         System.out.println("test 2");
         app.test2();
         System.out.println("test 3");
-        app.test3();
+        //app.test3();
+        System.out.println("test 4");
+        app.test4();
     }
 }
