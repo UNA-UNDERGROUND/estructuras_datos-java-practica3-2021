@@ -24,11 +24,20 @@ public class App {
         System.out.println(new Ejercicio2().at(stack, 2));
     }
 
+    public void test3() {
+        for (int n = 0; n < 128; n++) {
+            System.out.println("P(" + n + ")=" + new Ejercicio3().P(n));
+        }
+
+    }
+
     public static void main(String[] args) {
         App app = new App();
         System.out.println("test 1");
         app.test1();
         System.out.println("test 2");
         app.test2();
+        System.out.println("test 3");
+        app.test3();
     }
 }
